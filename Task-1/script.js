@@ -29,7 +29,7 @@ addBtn.addEventListener("click", () => {
   }
 
   // Increase progress by 10%
-  progress = Math.min(progress + 10, 100);
+  progress = Math.min(progress + 30, 100);
   currentBar.style.width = `${progress}%`;
   currentText.innerText = `${progress}%`;
 });

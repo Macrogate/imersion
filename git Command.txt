@@ -1,0 +1,5 @@
+git init
+git add .
+git commit -m "KuchBhe"
+git remote add origin "repo_URL"
+git push origin master
