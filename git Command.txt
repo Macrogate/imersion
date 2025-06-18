@@ -1,5 +1,67 @@
-git init
-git add .
-git commit -m "KuchBhe"
-git remote add origin "repo_URL"
-git push origin master
+CREATE A REPO IN GITHUB
+
+--git colne repo code path
+--cd repo-name
+--git add .   ----all the files goes into repo
+--git commit -m "message"     ---- make comment to the pus file
+--git push origin main ---- to push the file into main repo
+
+
+
+
+BRANCH IN GITHUB
+
+
+
+--git colne "repo code path"
+--cd repo-name
+--git checkout -b (branchname)
+--git add .   ----all the files goes into repo
+--git commit -m "message"     ---- make comment to the pus file
+--git push origin main ---- to push the file into main repo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Solution {
+    public int[] productExceptSelf(int[] nums) {
+        int n=nums.length;
+        // prefix
+        int[] prefix =new int[nums.length];
+
+        prefix[0] = nums[0];
+        for(int i = 0; i<nums.length; i++){
+            prefix[i] = prefix[i-1]*nums[i];
+        }
+        // suffix
+        int[] suffix =new int[nums.length];
+        suffix[n-1] = nums[n-1];
+        for(int i=n-2; i>=0; i++){
+            suffix[i]=suffix[i+1]*nums[i];
+        }
+        int[] ans = new int [n];
+        for(int i=0; i<n; i++){
+            if(i==0){
+                ans[i] = suffix[i+1];
+            }else if(i==n-1){
+                ans[i] = prefix[i-1];
+            }else{
+                ans[i] = prefix[i-1]*suffix[i+1];
+            }
+            return ans;
+
+
+        }
+
+    }
