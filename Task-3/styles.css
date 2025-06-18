@@ -46,9 +46,10 @@ input, select {
 }
 
 .h2{
-    /* text-align: center; */
+    text-align: center;
+    justify-content: center;
     color: #333;
     font-size: 24px;
     margin-bottom: 20px;
-    justify-content: center;
+    /* justify-content: center; */
 }
