@@ -4,25 +4,44 @@ body {
   background: #ffd001;
 }
 
-input, select {
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input, select, button {
   padding: 10px;
-  margin: 10px 5px;
+  margin: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  font-size: 14px;
 }
 
 #products {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .product {
-  background: white;
+  background: rgb(191, 251, 145);
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  background-color: #d4f8a5;
 }
 
 .product img {
@@ -42,14 +61,6 @@ input, select {
 }
 
 #error {
+  text-align: center;
   color: red;
-}
-
-.h2{
-    text-align: center;
-    justify-content: center;
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-    /* justify-content: center; */
 }

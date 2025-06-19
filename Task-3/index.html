@@ -2,22 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PRODUCT LIST</title>
+  <title>Product Listing</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <h2>PRODUCT SEARCH</h2>
+  <h2>SEARCH PRODUCT</h2>
 
-  <input type="text" id="searchInput" placeholder="Search products by name">
-  <button onclick="searchProducts()">Search</button>
-  <select onchange="sortProducts(this.value)">
-    <option value="">Sort by</option>
-    <option value="price-asc">Price Low to High</option>
-    <option value="price-desc">Price High to Low</option>
-    <option value="rating-desc">Rating High to Low</option>
-    <option value="rating-asc">Rating Low to High</option>
-  </select>
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search products by name">
+    <button onclick="searchProducts()">Search</button>
+
+    <select onchange="sortProducts(this.value)">
+      <option value="">Sort by</option>
+      <option value="price-asc">Price Low to High</option>
+      <option value="price-desc">Price High to Low</option>
+      <option value="rating-asc">Rating Low to High</option>
+      <option value="rating-desc">Rating High to Low</option>
+    </select>
+
+    <select id="brandFilter" onchange="applyFilters()">
+      <option value="">Filter by Brand</option>
+    </select>
+
+    <input type="number" id="minPrice" placeholder="Min Price" oninput="applyFilters()">
+    <input type="number" id="maxPrice" placeholder="Max Price" oninput="applyFilters()">
+  </div>
 
   <p id="error"></p>
 
