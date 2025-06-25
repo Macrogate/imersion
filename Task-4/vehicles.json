@@ -1,0 +1,23 @@
+[
+  {
+    "vehicleName": "Honda Civic",
+    "brand": "Honda",
+    "price": 22000,
+    "desc": "Compact and fuel-efficient car",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "vehicleName": "Toyota Corolla",
+    "brand": "Toyota",
+    "price": 21000,
+    "desc": "Reliable sedan with great mileage",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "vehicleName": "Ford F-150",
+    "brand": "Ford",
+    "price": 35000,
+    "desc": "Best-selling truck in the US",
+    "image": "https://via.placeholder.com/150"
+  }
+]
